@@ -1,6 +1,7 @@
-Attribute VB_Name = "Module1"
 Sub Stonks()
-
+    ' This code was made possible with the use of Stack Overflow and Google. 
+    ' We stand on the shoulders of giants!
+    
 'Loop through all Worksheets-------------------------------------
 
     For Each ws In Worksheets
