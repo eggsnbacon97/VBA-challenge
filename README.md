@@ -15,7 +15,7 @@
 
 ## Here's how it works!
 
-1. Does a lot of pretty VBA formatting (bolding, percent formatting, coloring) with values like:
+### 1. Does a lot of pretty VBA formatting (bolding, percent formatting, coloring) with values like:
 ```
 .Font.Bold=true
 .NumberFormat="0.00%"
@@ -26,7 +26,7 @@ As you may notice, there are two "Ticker" values, and yes, one does reference th
 ```
 ws.Range("P1").Value = ws.Range("I1").Value
 ```
-2. Declares all the variables (well, *almost*)
+### 2. Declares all the variables (well, *almost*)
 Here, I am declaring variables that will be used later on in the script. Stuff like *Ticker_Symbol*, *Yearly_Change*, etc. It's all going to come in handy later!
 ```
     Dim Ticker_Symbol As String
@@ -42,7 +42,7 @@ Here, I am declaring variables that will be used later on in the script. Stuff l
 ```
 So now that I've declared those variables, we only need to set a few. The reason behind this is because the default value for an empty variable is zero. 
 
-3. Start the logic!
+### 3. Start the logic!
 Now the script actually begins to "do it's thing". We're going to give it a loop to run, a bunch of conditions, and let it run!
 I won't go through all the code now (you can look at it in the .bas file), but here are the conditions it's given:
 
@@ -55,7 +55,7 @@ I won't go through all the code now (you can look at it in the .bas file), but h
 
 This will run until it hits the last row, which we defined earlier.
 
-4. Greatest Increase, Decrease, and Greatest Total Volume (the extra bit)
+### 4. Greatest Increase, Decrease, and Greatest Total Volume (the extra bit)
 Now we are going to make another loop (not a nested one). This one will run through our Percent Change and Total Stock Volume columns, and get our minimum and maximums.
 Here are the conditions given:
 
@@ -65,7 +65,7 @@ Here are the conditions given:
 
 For all of those conditions, there's also a "while you're at it" that tells it to print out the appropriate ticker name as well.
 
-5. Finally! We automatically fit every column to fit the text, so it looks pretty. I used
+### 5. Finally! We automatically fit every column to fit the text, so it looks pretty. I used
 ```
 ws.Columns("A:Q").AutoFit
 ```
