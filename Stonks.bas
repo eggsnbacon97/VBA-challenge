@@ -97,6 +97,7 @@ Sub Stonks()
     LastRowBonus = Cells(Rows.Count, 11).End(xlUp).Row
             
         For i = 2 To LastRowBonus
+
             If ws.Range("K" & i).Value > ws.Range("Q2").Value Then
                 ws.Range("Q2").Value = ws.Range("K" & i).Value
                 ws.Range("P2").Value = ws.Range("I" & i).Value
